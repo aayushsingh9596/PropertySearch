@@ -1,0 +1,108 @@
+import { IProperty } from "@/types";
+
+export const dummyProperties: IProperty[] = [
+    {
+      _id: "prop12345",
+      owner: "user67890",
+      name: "Luxury Beachfront Villa",
+      type: "Villa",
+      description: "A beautiful beachfront villa with stunning ocean views and modern amenities.",
+      location: {
+        street: "123 Ocean Drive",
+        city: "Miami",
+        state: "FL",
+        zipcode: "33139",
+      },
+      beds: 4,
+      baths: 3,
+      squareFeet: 2500,
+      amenities: ["Pool", "WiFi", "Private Beach", "Gym", "Air Conditioning"],
+      rates: {
+        nightly: 350,
+        weekly: 2200,
+        monthly: 8000,
+      },
+      sellerInfo: {
+        name: "John Doe",
+        email: "johndoe@example.com",
+        phone: "+1 234 567 8900",
+      },
+      images: [
+        "https://source.unsplash.com/800x600/?villa,beach",
+        "https://source.unsplash.com/800x600/?luxury,villa",
+        "https://source.unsplash.com/800x600/?ocean,house",
+      ],
+      isFeatured: true,
+      createdAt: "2024-02-25T12:00:00.000Z",
+      updatedAt: "2024-02-26T15:30:00.000Z",
+    },
+    {
+        _id: "prop67890",
+      owner: "user12345",
+      name: "Modern Downtown Apartment",
+      type: "Apartment",
+      description: "A stylish apartment in the heart of downtown with skyline views.",
+      location: {
+        street: "456 City Center Blvd",
+        city: "New York",
+        state: "NY",
+        zipcode: "10001",
+      },
+      beds: 2,
+      baths: 2,
+      squareFeet: 1200,
+      amenities: ["Elevator", "Gym", "Parking", "High-Speed Internet"],
+      rates: {
+        nightly: 200,
+        weekly: 1300,
+        monthly: 5000,
+      },
+      sellerInfo: {
+        name: "Jane Smith",
+        email: "janesmith@example.com",
+        phone: "+1 987 654 3210",
+      },
+      images: [
+        "https://source.unsplash.com/800x600/?apartment,modern",
+        "https://source.unsplash.com/800x600/?city,apartment",
+      ],
+      isFeatured: false,
+      createdAt: "2024-02-20T09:00:00.000Z",
+      updatedAt: "2024-02-21T14:20:00.000Z",
+    },
+    {
+        _id: "prop54321",
+      owner: "user98765",
+      name: "Cozy Mountain Cabin",
+      type: "Cabin",
+      description: "A peaceful retreat in the mountains with breathtaking nature views.",
+      location: {
+        street: "789 Pine Tree Lane",
+        city: "Aspen",
+        state: "CO",
+        zipcode: "81611",
+      },
+      beds: 3,
+      baths: 2,
+      squareFeet: 1800,
+      amenities: ["Fireplace", "Hot Tub", "Hiking Trails", "Pet Friendly"],
+      rates: {
+        nightly: 250,
+        weekly: 1600,
+        monthly: 6000,
+      },
+      sellerInfo: {
+        name: "Michael Brown",
+        email: "michaelbrown@example.com",
+        phone: "+1 345 678 9012",
+      },
+      images: [
+        "https://source.unsplash.com/800x600/?cabin,mountain",
+        "https://source.unsplash.com/800x600/?logcabin,forest",
+      ],
+      isFeatured: true,
+      createdAt: "2024-02-22T10:15:00.000Z",
+      updatedAt: "2024-02-23T11:45:00.000Z",
+    },
+  ];
+  
