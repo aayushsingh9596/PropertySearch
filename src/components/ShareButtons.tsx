@@ -10,7 +10,7 @@ import {
   EmailIcon,
 } from 'react-share';
 
-const ShareButtons = ({ property }:any) => {
+const ShareButtons = ({ property }: any) => {
   const shareUrl = `${process.env.NEXT_PUBLIC_DOMAIN}/properties/${property._id}`;
 
   return (
@@ -21,7 +21,6 @@ const ShareButtons = ({ property }:any) => {
       <div className='flex gap-3 justify-center pb-5'>
         <FacebookShareButton
           url={shareUrl}
-          quote={property?.name}
           hashtag={`#${property.type.replace(/\s/g, '')}ForRent`}
         >
           <FacebookIcon size={40} round={true} />
@@ -54,4 +53,5 @@ const ShareButtons = ({ property }:any) => {
     </>
   );
 };
+
 export default ShareButtons;

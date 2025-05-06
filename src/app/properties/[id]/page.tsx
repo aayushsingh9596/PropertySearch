@@ -6,15 +6,15 @@ import PropertyImages from "@/components/PropertyImages";
 import ShareButtons from "@/components/ShareButtons";
 import connectDB from "@/config/database"
 import Property from "@/models/Property";
-import { IProperty } from "@/types";
+// import { IProperty } from "@/types";
 import { convertToSerializeableObject } from "@/utils/convertToObject";
 import { FaArrowLeft } from "react-icons/fa";
 
-interface PropertyProps {
-  params: { id: string }
+interface Props {
+  params: Promise<{ id: string }>
 }
 
-const PropertyPage = async ({ params }: PropertyProps) => {
+const PropertyPage = async ({ params }: Props) => {
   const { id } = await params
   await connectDB();
   const propertyDoc = await Property.findById(id).lean();

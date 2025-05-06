@@ -5,7 +5,10 @@ import connectDB from "@/config/database";
 import Property from "@/models/Property";
 import Pagination from "@/components/Pagination";
 
-const PropertiesPage = async ({ searchParams }: { searchParams: { page?: string, pageSize?: string } }) => {
+interface Props{
+  searchParams: Promise<{ page?: string, pageSize?: string}>
+}
+const PropertiesPage = async ({ searchParams }:Props) => {
 
   await connectDB();
   const params = await searchParams;
